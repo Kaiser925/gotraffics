@@ -20,7 +20,7 @@ var localPort string
 
 func initFlag() {
 	flag.StringVar(&target, "target", "", "target address")
-	flag.StringVar(&localPort, "port", "8080", "local port to listen")
+	flag.StringVar(&localPort, "lport", "8080", "local port to listen")
 }
 
 func handleRequestAndRedirect(resp http.ResponseWriter, req *http.Request) {
